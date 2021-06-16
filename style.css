@@ -1,0 +1,35 @@
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    justify-content: flex-start;
+    
+}
+.navLinks{
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*cant figure out the css above to space content*/
+
+.navButton{
+    width: 150px;
+    height:44px;
+    border-radius: 18px;
+    text-align: center;
+    background-color: #8733A3;
+    color: white;
+}

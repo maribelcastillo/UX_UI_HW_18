@@ -23,13 +23,114 @@ a{
     flex-direction: row;
     justify-content: space-between;
 }
-/*cant figure out the css above to space content*/
+.navLinks li{
+    padding: 20px;
+}
 
 .navButton{
-    width: 150px;
-    height:44px;
-    border-radius: 18px;
+    margin-top: 20px;
+}
+.button{
+    background-color: #8733A3; 
+    border: none; 
+    color: white; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 10px 45px;
     text-align: center;
-    background-color: #8733A3;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.button:hover{
+    background-color: #4A1C59;
+}
+
+.carousel{
+    position: relative;
+    width: 100%;
+}
+
+.carousel img{
+    width: 100%;
+    height: auto;
+}
+
+.carousel .button{
+    position: absolute;
+    top:75%;
+    left: 12%;
+}
+
+footer{
+    background-color: #4A1C59;
     color: white;
+    display: grid;
+    min-height: 500px;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "footerLinks emailField"
+    "footerAddress emailField"
+    "socialHandles socialHandles"
+    "legal legal";
+}
+
+#footerLinks{
+    list-style-type: none;
+    grid-area: footerLink;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+#footerLinks li{
+    padding: 5px;
+    justify-content: start;
+}
+#about{
+    border-bottom: 2px solid white;
+    width: fit-content;
+}
+#volunteer{
+    border-bottom: 2px solid white;
+    width: fit-content;
+}
+#contact{
+    border-bottom: 2px solid white;
+    width: fit-content;
+}
+#footerAddress{
+    list-style-type: none;
+    grid-area: footerAddress;
+    justify-content: start;
+    align-content: center;
+}
+
+#emailField{
+    grid-area: emailField;
+}
+
+#footerButton{
+    background-color: #FFC839;
+    color: #4A1C59;
+}
+#socialHandles{
+    grid-area: socialHandles; 
+}
+
+#legal{
+    grid-area: legal;
+    justify-content: center;
+}
+
+input{
+    height: 35px;
+    width: 250px;
+}
+h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
 }

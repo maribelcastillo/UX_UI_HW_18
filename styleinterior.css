@@ -1,0 +1,94 @@
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: #8733A3;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    justify-content: flex-start;
+    
+}
+.navLinks{
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navLinks li{
+    padding: 20px;
+}
+
+.navButton{
+    margin-top: 20px;
+}
+.button{
+    background-color: #8733A3; 
+    border: none; 
+    color: white; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 10px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.button:hover{
+    background-color: #4A1C59;
+}
+
+.pageHeading{
+    background-color: #FFF6E8;
+    border-bottom: 4px solid #FFC839;
+}
+
+.combinedTextImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#headingText{
+    align-items: center;
+    justify-content: center;
+}
+
+#headingImage{
+    align-items: center;
+    justify-content: center;
+    margin-top: 49px;
+    margin-left: 10px;
+}
+
+.donationHero{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "facts catHero"
+}
+
+.facts{
+    grid-area: facts;
+}
+
+.catHero{
+    grid-area: catHero;
+    width: 408px;
+    height: 542px;
+}

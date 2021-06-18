@@ -77,18 +77,33 @@ a{
 }
 
 .donationHero{
+    min-height: 300px;
+}
+.donateOnline{
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
-    "facts catHero"
+    "facts catHero";
 }
-
-.facts{
+#facts{
     grid-area: facts;
+    justify-content: center;
+}
+.donateOnline .button{
+    justify-content: center;
 }
 
-.catHero{
+.medium{
+    font-size: 32px;
+    text-align: center;
+}
+
+#catHero{
     grid-area: catHero;
+}
+
+#cat{
     width: 408px;
     height: 542px;
 }

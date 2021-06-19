@@ -118,7 +118,8 @@ footer{
     color: #4A1C59;
 }
 #socialHandles{
-    grid-area: socialHandles; 
+    grid-area: socialHandles;
+    justify-content: stretch; 
 }
 
 #legal{
@@ -133,4 +134,37 @@ input{
 h5{
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navLinks {
+      display: none;
+    }
+    .navButton {
+      margin-left: auto;
+    }
+    .button{
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+    .carousel{
+        width: auto;
+        height: fit-content;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "footerLinks"
+        "footerAddress"
+        "emailField"
+        "socialHandles" 
+        "legal";
+    }
+    #footerLinks{
+        width:auto;
+    }
+    #emailField{
+        width: auto;
+    }
 }

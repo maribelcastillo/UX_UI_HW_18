@@ -69,12 +69,12 @@ footer{
     background-color: #4A1C59;
     color: white;
     display: grid;
-    min-height: 500px;
+    align-content: center;
+    justify-content: center;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 65% 1fr 1fr;
     grid-template-areas: 
     "footerLinks emailField"
-    "footerAddress emailField"
     "socialHandles socialHandles"
     "legal legal";
 }
@@ -119,12 +119,16 @@ footer{
 }
 #socialHandles{
     grid-area: socialHandles;
-    justify-content: stretch; 
+    justify-self: center;
+    align-content: center;
 }
 
 #legal{
     grid-area: legal;
-    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    margin: 0 auto;
+    height: 30px;
 }
 
 input{
@@ -147,24 +151,25 @@ h5{
         padding: 5px 15px;
         font-size: 16px;
     }
-    .carousel{
-        width: auto;
-        height: fit-content;
-    }
+  
     footer{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 30% 2fr 1fr 1fr;
         grid-template-areas: 
         "footerLinks"
-        "footerAddress"
         "emailField"
         "socialHandles" 
         "legal";
     }
     #footerLinks{
-        width:auto;
+        text-align: center;
     }
     #emailField{
-        width: auto;
+        margin: auto 5%;
     }
+    #legal{
+        margin: auto 5%;
+        text-align: center;
+    }
+
 }

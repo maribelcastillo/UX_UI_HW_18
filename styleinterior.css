@@ -8,6 +8,9 @@ h1{
     font-size: 60px;
     color: #8733A3;
 }
+h2{
+    font-size: 30px;
+}
 a{
     color: white;
     text-decoration: none;
@@ -76,34 +79,134 @@ a{
     margin-left: 10px;
 }
 
-.donationHero{
-    min-height: 300px;
-}
 .donateOnline{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
     grid-template-areas:
     "facts catHero";
 }
 #facts{
     grid-area: facts;
-    justify-content: center;
-}
-.donateOnline .button{
-    justify-content: center;
-}
-
-.medium{
-    font-size: 32px;
-    text-align: center;
+    place-self: center;
 }
 
 #catHero{
     grid-area: catHero;
+    justify-content: end;
+}
+#cat{
+    height: 40%;
+    width: auto;
 }
 
-#cat{
-    width: 408px;
-    height: 542px;
+footer{
+    background-color: #4A1C59;
+    color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 65% 1fr 1fr;
+    grid-template-areas: 
+    "footerLinks emailField"
+    "socialHandles socialHandles"
+    "legal legal";
+}
+
+#footerLinks{
+    list-style-type: none;
+    grid-area: footerLink;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+#footerLinks li{
+    padding: 5px;
+    justify-content: start;
+}
+#about{
+    border-bottom: 2px solid white;
+    width: fit-content;
+}
+#volunteer{
+    border-bottom: 2px solid white;
+    width: fit-content;
+}
+#contact{
+    border-bottom: 2px solid white;
+    width: fit-content;
+}
+#footerAddress{
+    list-style-type: none;
+    grid-area: footerAddress;
+    justify-content: start;
+    align-content: center;
+}
+
+#emailField{
+    grid-area: emailField;
+}
+
+#footerButton{
+    background-color: #FFC839;
+    color: #4A1C59;
+}
+#socialHandles{
+    grid-area: socialHandles;
+    justify-self: center;
+    align-content: center;
+}
+
+#legal{
+    grid-area: legal;
+    justify-items: center;
+    align-content: center;
+    margin: 0 auto;
+    height: 30px;
+}
+
+input{
+    height: 35px;
+    width: 250px;
+}
+h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navLinks {
+      display: none;
+    }
+    .navButton {
+      margin-left: auto;
+    }
+    .button{
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+  
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 2fr 1fr 1fr;
+        grid-template-areas: 
+        "footerLinks"
+        "emailField"
+        "socialHandles" 
+        "legal";
+    }
+    #footerLinks{
+        text-align: center;
+    }
+    #emailField{
+        margin: auto 5%;
+    }
+    #legal{
+        margin: auto 5%;
+        text-align: center;
+    }
+
 }
